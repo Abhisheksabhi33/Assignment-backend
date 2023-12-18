@@ -1,4 +1,4 @@
-USE btawbm1tofea4ytgrmfj;
+USE bpffm0sekcbbwrjtdwqa;
 
 
 CREATE TABLE Users (
@@ -18,19 +18,6 @@ CREATE TABLE Payment (
     LastPaymentDate DATE DEFAULT (CURRENT_DATE),
     PaymentStatus CHAR(1) DEFAULT 'F' CHECK (PaymentStatus IN ('T', 'F'))
 );
-
-
-INSERT INTO Users (Name, Age, Email, Phone, Batch)
-VALUES ('Jane', 35, 'jane@email.com', '9898898989', '6-7AM');
-
-INSERT INTO Users (Name, Age, Email, Phone, Batch)
-VALUES ('John', 25, 'john@email.com', '9898898989', '7-8AM');
-
-INSERT INTO Payment (ID, UserID)
-VALUES (1, 1);
-
-INSERT INTO Payment (ID, UserID)
-VALUES (2, 2);
 
 
 
